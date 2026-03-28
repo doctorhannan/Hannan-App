@@ -118,16 +118,16 @@ const Projects = () => {
           review: "Game changer for our support team!"
         },
         {
-          img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
-          title: "AI Sales Assistant Agent",
-          desc: "Conversational AI agent for lead qualification",
-          tags: ["GPT-4", "Automation", "CRM"],
-          result: "2x qualified leads",
-          problem: "Sales teams spent excessive time qualifying leads manually, reducing efficiency and slowing down the sales cycle.",
-          solution: "Built an AI sales assistant that interacts with users, qualifies leads based on predefined criteria, and automatically sends data to CRM systems—allowing sales teams to focus only on high-value prospects.",
-          technologies: ["OpenAI", "CRM APIs", "Automation"],
-          cost: "$700",
-          review: "Increased our qualified leads significantly!"
+          img: "pictures/projects/quote send zap.png",
+          title: "Automated Quote Generation System",
+          desc: "End-to-end automation for quote/invoice and pricing generation",
+          tags: ["Zapier", "Python", "Automation"],
+          result: "Faster quotes/invoice with zero manual effort",
+          problem: "Manual quote creation was time-consuming, error-prone, and difficult to scale as it required matching products and calculating pricing manually.",
+          solution: "Built an automated system that captures customer data via webhooks, processes and normalizes inputs, intelligently matches products based on requirements, calculates pricing including installation and discounts, and generates structured quotes with one recommended and multiple alternate options for better customer decision-making.",
+          technologies: ["Zapier", "Python", "Google Sheets", "Webhooks"],
+          cost: "$200",
+          review: "Significantly improved efficiency and reduced manual workload."
         },
         {
           img: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=500&q=80",
@@ -140,7 +140,7 @@ const Projects = () => {
           technologies: ["AutoGen", "Python", "PostgreSQL"],
           cost: "$900",
           review: "Saved us countless hours in reporting!"
-        }
+        },
       ]
     }
   ];
@@ -163,7 +163,7 @@ const Projects = () => {
 
         {projectCategories.map((section, i) => (
           <div key={i} className="mb-16">
-            <h3 className="text-2xl font-bold text-white mb-6">
+            <h3 className="text-2xl font-bold text-purple-500 mb-6">
               {section.category}
             </h3>
 
