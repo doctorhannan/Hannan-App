@@ -1,7 +1,21 @@
 import { useState } from "react";
 
+type Project = {
+  img: string;
+  title: string;
+  desc: string;
+  link?: string;
+  tags: string[];
+  result: string;
+  problem: string;
+  solution: string;
+  technologies: string[];
+  cost: string;
+  review: string;
+};
+
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const projectCategories = [
     {
@@ -135,7 +149,6 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-navy-950">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-11 xl:px-16">
 
-        {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 bg-indigo-500/10 border border-indigo-500/25">
             <span className="text-indigo-400 text-sm font-medium">Portfolio</span>
@@ -148,10 +161,8 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Categories */}
         {projectCategories.map((section, i) => (
           <div key={i} className="mb-16">
-
             <h3 className="text-2xl font-bold text-white mb-6">
               {section.category}
             </h3>
@@ -201,13 +212,10 @@ const Projects = () => {
           </div>
         ))}
 
-        {/* Modal */}
         {selectedProject && (
           <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4 ">
-
             <div className="bg-navy-900 max-w-5xl w-full rounded-2xl p-6 relative border border-purple-900">
 
-              {/* Close */}
               <button
                 onClick={() => setSelectedProject(null)}
                 className="absolute top-4 right-4 text-white text-xl cursor-pointer"
@@ -215,18 +223,15 @@ const Projects = () => {
                 ✕
               </button>
 
-              {/* Image */}
               <img
                 src={selectedProject.img}
                 className="w-full h-56 object-cover rounded-xl mb-4 "
               />
 
-              {/* Title */}
               <h2 className="text-2xl text-white font-bold mb-3">
                 {selectedProject.title}
               </h2>
 
-              {/* Content */}
               {selectedProject.link && (
                 <p className="text-red-400 mb-2">
                   <span className="text-neutral-200 font-semibold">Link:</span>{" "}
@@ -240,6 +245,7 @@ const Projects = () => {
                   </a>
                 </p>
               )}
+
               <p className="text-gray-400 mb-2">
                 <span className="text-neutral-200 font-semibold">Problem:</span> {selectedProject.problem}
               </p>
@@ -259,10 +265,10 @@ const Projects = () => {
               <p className="text-green-400 mt-3">
                 ⭐ {selectedProject.review}
               </p>
-
             </div>
           </div>
         )}
+
         <div className="flex justify-center items-center">
           <a
             href="#contact"
@@ -274,6 +280,7 @@ const Projects = () => {
             </svg>
           </a>
         </div>
+
       </div>
     </section>
   );
