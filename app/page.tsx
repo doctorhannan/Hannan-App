@@ -12,6 +12,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
+import Overview from "@/components/sections/OverView";
 
 export default function Home() {
   useEffect(() => {
@@ -44,6 +45,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex-1">
+        <Overview/>
         <Hero />
         <About />
         <Skills />
