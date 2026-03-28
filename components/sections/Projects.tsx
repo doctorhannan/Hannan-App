@@ -1,96 +1,282 @@
+import { useState } from "react";
+
 const Projects = () => {
-    const projects = [
-      {
-        img: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=500&q=80",
-        tags: ["LangChain", "GPT-4", "Pinecone"],
-        title: "AI Customer Support Agent",
-        desc: "Autonomous support agent handling 500+ daily queries with 94% resolution rate, reducing support costs by 70%.",
-        result: "70% cost reduction",
-      },
-      {
-        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80",
-        tags: ["n8n", "HubSpot", "OpenAI"],
-        title: "Sales Pipeline Automation",
-        desc: "End-to-end sales automation with AI lead scoring, personalized outreach, and CRM sync for a SaaS startup.",
-        result: "3x lead conversion rate",
-      },
-      {
-        img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
-        tags: ["RAG", "LlamaIndex", "n8n"],
-        title: "Enterprise RAG Knowledge Base",
-        desc: "Custom RAG system ingesting 100+ documents, enabling instant accurate answers from company knowledge.",
-        result: "98% query accuracy",
-      },
-      {
-        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80",
-        tags: ["Zapier", "Shopify", "GPT-4"],
-        title: "E-commerce AI Assistant",
-        desc: "AI shopping assistant with product recommendations, order tracking, and automated email sequences.",
-        result: "45% increase in AOV",
-      },
-      {
-        img: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&q=80",
-        tags: ["CrewAI", "Nextjs", "n8n"],
-        title: "HR Recruitment AI Agent",
-        desc: "Multi-agent system for CV screening, candidate ranking, interview scheduling, and automated feedback.",
-        result: "80% faster hiring process",
-      },
-      {
-        img: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=500&q=80",
-        tags: ["AutoGen", "FastAPI", "PostgreSQL"],
-        title: "AI Data Analytics Agent",
-        desc: "Natural language to SQL agent that generates business insights and automated reports from raw data.",
-        result: "10x faster reporting",
-      },
-    ];
-  
-    return (
-      <section id="projects" className="py-20 bg-navy-950">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-11 xl:px-16">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 bg-indigo-500/10 border border-indigo-500/25">
-              <span className="text-indigo-400 text-sm font-medium">Portfolio</span>
-            </div>
-            <h2 className="font-heading text-4xl font-bold text-white mb-4">
-              My <span className="gradient-text">Projects</span>
-            </h2>
-            <p className="text-gray-400 max-w-xl mx-auto">
-              Real-world AI solutions that delivered measurable business outcomes for clients across industries.
-            </p>
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const projectCategories = [
+    {
+      category: "Web Development",
+      projects: [
+        {
+          img: "/pictures/projects/rakalabweb.png",
+          title: "Raka Labs Website",
+          desc: "Modern Business Solutions via automation tech startup website",
+          link: "https://rakalabs.vercel.app/",
+          tags: ["Next.js", "Tailwind", "API"],
+          result: "Fast UI",
+          problem: "Raka Labs required a modern, high-performance web presence to effectively communicate their AI-driven automation services. Their previous digital presence lacked scalability, clear messaging, and failed to reflect the innovation behind their solutions, resulting in weak user engagement and limited client conversions.",
+          solution: "Developed a fully responsive and scalable website using Next.js and Tailwind CSS, focusing on performance optimization, clean UI/UX, and strong service positioning. Implemented structured layouts, fast-loading components, and conversion-focused design elements to enhance user engagement and clearly communicate their value proposition.",
+          technologies: ["Next.js", "Tailwind", "Node.js"],
+          cost: "$300",
+          review: "Amazing UI and performance!"
+        },
+        {
+          img: "/pictures/projects/ozgoatweb.png",
+          title: "OZGOAT Website",
+          desc: "Australian business website for tech solutions",
+          tags: ["Next.js", "SEO", "Tailwind CSS", "React.js"],
+          result: "High conversion",
+          link: "https://ozgoat-webiste.vercel.app/",
+          problem: "OZGOAT needed a professional digital presence to establish credibility in the competitive Australian tech market. Their existing branding lacked clarity, SEO optimization, and a structured user journey, limiting their ability to attract and convert potential clients.",
+          solution: "Designed and developed a modern, SEO-optimized website with a strong focus on branding, user experience, and conversion strategy. Leveraged Next.js for performance and scalability, and implemented clean UI components with Tailwind CSS to ensure a visually appealing and highly responsive experience across all devices.",
+          technologies: ["Next.js", "SEO", "React.js"],
+          cost: "$250",
+          review: "Very professional work!"
+        },
+        {
+          img: "/pictures/projects/portfolioweb.png",
+          title: "Personal Website",
+          desc: "My personal portfolio website",
+          tags: ["Next.js", "SEO"],
+          result: "High conversion",
+          problem: "There was a need to establish a strong personal brand and showcase technical expertise in AI, automation, and web development. Without a structured and visually appealing portfolio, it was difficult to effectively communicate skills and attract high-quality clients.",
+          solution: "Built a modern, fully responsive portfolio using Next.js with a strong emphasis on UI/UX, performance, and storytelling. Designed sections to clearly highlight services, projects, and expertise while optimizing for SEO and client conversion, resulting in improved visibility and professional positioning.",
+          technologies: ["Next.js", "SEO"],
+          cost: "$250",
+          review: ""
+        }
+      ]
+    },
+    {
+      category: "Automation Projects",
+      projects: [
+        {
+          img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80",
+          title: "CRM Lead-to-Sales Automation",
+          desc: "Fully automated lead pipeline from capture to conversion",
+          tags: ["n8n", "Zapier", "HubSpot"],
+          result: "3x increase in lead conversion",
+          problem: "Businesses were manually managing leads across multiple platforms, leading to delayed follow-ups, missed opportunities, and inconsistent sales processes.",
+          solution: "Designed and deployed an end-to-end CRM automation system using n8n and Zapier that captures leads, qualifies them automatically, triggers personalized email sequences, and syncs data across CRM tools—ensuring faster response time and higher conversion rates.",
+          technologies: ["n8n", "Zapier", "HubSpot"],
+          cost: "$400",
+          review: "Massively improved our sales workflow!"
+        },
+        {
+          img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80",
+          title: "E-commerce Order Automation",
+          desc: "Automated order processing and customer notifications",
+          tags: ["Shopify", "Make", "API"],
+          result: "60% reduction in manual workload",
+          problem: "E-commerce businesses struggled with manual order processing, delayed updates, and inefficient customer communication, affecting customer satisfaction.",
+          solution: "Built an automated workflow that processes orders, updates inventory, sends real-time notifications, and integrates with third-party services—ensuring seamless operations and improved customer experience.",
+          technologies: ["Shopify API", "Make", "Webhooks"],
+          cost: "$350",
+          review: "Automation saved us hours daily!"
+        },
+        {
+          img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80",
+          title: "Marketing Automation System",
+          desc: "Automated email campaigns and lead nurturing",
+          tags: ["Mailchimp", "n8n", "Automation"],
+          result: "2.5x engagement rate",
+          problem: "Manual email marketing campaigns were time-consuming and lacked personalization, leading to low engagement and poor ROI.",
+          solution: "Implemented an automated marketing system that segments users, triggers personalized email sequences, and tracks engagement—boosting open rates and conversions significantly.",
+          technologies: ["Mailchimp", "n8n", "APIs"],
+          cost: "$300",
+          review: "Our marketing is now fully automated!"
+        }
+      ]
+    },
+    {
+      category: "Business AI Solutions",
+      projects: [
+        {
+          img: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=500&q=80",
+          title: "AI Customer Support Agent",
+          desc: "24/7 intelligent chatbot handling customer queries",
+          tags: ["LangChain", "GPT-4", "RAG"],
+          result: "70% cost reduction",
+          problem: "Businesses faced high support costs and slow response times due to reliance on human agents, leading to poor customer satisfaction.",
+          solution: "Developed a 24/7 AI-powered customer support agent using LangChain and GPT-4 with RAG capabilities, enabling accurate, real-time responses while reducing dependency on human support teams.",
+          technologies: ["LangChain", "OpenAI", "Vector DB"],
+          cost: "$800",
+          review: "Game changer for our support team!"
+        },
+        {
+          img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
+          title: "AI Sales Assistant Agent",
+          desc: "Conversational AI agent for lead qualification",
+          tags: ["GPT-4", "Automation", "CRM"],
+          result: "2x qualified leads",
+          problem: "Sales teams spent excessive time qualifying leads manually, reducing efficiency and slowing down the sales cycle.",
+          solution: "Built an AI sales assistant that interacts with users, qualifies leads based on predefined criteria, and automatically sends data to CRM systems—allowing sales teams to focus only on high-value prospects.",
+          technologies: ["OpenAI", "CRM APIs", "Automation"],
+          cost: "$700",
+          review: "Increased our qualified leads significantly!"
+        },
+        {
+          img: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=500&q=80",
+          title: "AI Data Insights Agent",
+          desc: "AI agent for business analytics and reporting",
+          tags: ["AutoGen", "Python", "PostgreSQL"],
+          result: "10x faster reporting",
+          problem: "Businesses struggled to extract meaningful insights from raw data, requiring manual analysis and technical expertise.",
+          solution: "Developed an AI data agent that converts natural language queries into actionable insights, generates reports automatically, and visualizes business data—empowering faster decision-making.",
+          technologies: ["AutoGen", "Python", "PostgreSQL"],
+          cost: "$900",
+          review: "Saved us countless hours in reporting!"
+        }
+      ]
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20 bg-navy-950">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-11 xl:px-16">
+
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 bg-indigo-500/10 border border-indigo-500/25">
+            <span className="text-indigo-400 text-sm font-medium">Portfolio</span>
           </div>
-  
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, idx) => (
-              <div key={idx} className="project-card glass-card rounded-2xl overflow-hidden border border-indigo-500/15 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-indigo-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group relative">
-                <div className="relative overflow-hidden h-48">
-                  <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="project-overlay absolute inset-0 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-navy-950 via-navy-950/80 to-transparent">
-                    <button className="bg-gradient-to-r from-indigo-600 to-purple-700 text-white text-xs font-semibold px-4 py-2 rounded-md font-heading">
-                      View Details →
-                    </button>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <div className="flex flex-wrap gap-1.5 mb-3">
-                    {project.tags.map((tag) => (
-                      <span key={tag} className="tag-badge bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-xs px-2 py-1 rounded-full">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <h3 className="font-heading text-white font-bold text-base mb-2">{project.title}</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed mb-3">{project.desc}</p>
-                  <div className="flex items-center gap-2 text-green-400 text-xs font-medium">
-                    <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-                    {project.result}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h2 className="font-heading text-4xl font-bold text-white mb-4">
+            My <span className="gradient-text">Projects</span>
+          </h2>
+          <p className="text-gray-400 max-w-xl mx-auto">
+            Real-world AI and web solutions delivering measurable results.
+          </p>
         </div>
-      </section>
-    );
-  };
-  
-  export default Projects;
+
+        {/* Categories */}
+        {projectCategories.map((section, i) => (
+          <div key={i} className="mb-16">
+
+            <h3 className="text-2xl font-bold text-white mb-6">
+              {section.category}
+            </h3>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {section.projects.map((project, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => setSelectedProject(project)}
+                  className="glass-card rounded-2xl overflow-hidden border border-indigo-500/15 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-indigo-500/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+                >
+                  <div className="relative overflow-hidden h-48">
+                    <img
+                      src={project.img}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="p-5">
+                    <div className="flex flex-wrap gap-1.5 mb-3">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-xs px-2 py-1 rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <h3 className="text-white font-bold mb-1">
+                      {project.title}
+                    </h3>
+
+                    <p className="text-gray-400 text-xs mb-3">
+                      {project.desc}
+                    </p>
+
+                    <div className="text-green-400 text-xs font-medium">
+                      {project.result}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+
+        {/* Modal */}
+        {selectedProject && (
+          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4 ">
+
+            <div className="bg-navy-900 max-w-5xl w-full rounded-2xl p-6 relative border border-purple-900">
+
+              {/* Close */}
+              <button
+                onClick={() => setSelectedProject(null)}
+                className="absolute top-4 right-4 text-white text-xl cursor-pointer"
+              >
+                ✕
+              </button>
+
+              {/* Image */}
+              <img
+                src={selectedProject.img}
+                className="w-full h-56 object-cover rounded-xl mb-4 "
+              />
+
+              {/* Title */}
+              <h2 className="text-2xl text-white font-bold mb-3">
+                {selectedProject.title}
+              </h2>
+
+              {/* Content */}
+              {selectedProject.link && (
+                <p className="text-red-400 mb-2">
+                  <span className="text-neutral-200 font-semibold">Link:</span>{" "}
+                  <a
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-blue-400 transition"
+                  >
+                    {selectedProject.link}
+                  </a>
+                </p>
+              )}
+              <p className="text-gray-400 mb-2">
+                <span className="text-neutral-200 font-semibold">Problem:</span> {selectedProject.problem}
+              </p>
+
+              <p className="text-gray-400 mb-2">
+                <span className="text-neutral-200 font-semibold">Solution:</span> {selectedProject.solution}
+              </p>
+
+              <p className="text-gray-400 mb-2">
+                <span className="text-neutral-200 font-semibold">Technologies:</span> {selectedProject.technologies.join(", ")}
+              </p>
+
+              <p className="text-gray-400 mb-2">
+                <span className="text-neutral-200 font-semibold">Cost:</span> {selectedProject.cost}
+              </p>
+
+              <p className="text-green-400 mt-3">
+                ⭐ {selectedProject.review}
+              </p>
+
+            </div>
+          </div>
+        )}
+        <div className="flex justify-center items-center">
+          <a
+            href="#contact"
+            className="bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-semibold px-7 py-3 rounded-md font-heading inline-flex items-center gap-2 hover:shadow-[0_0_30px_rgba(99,102,241,0.6)] hover:-translate-y-0.5 transition-all"
+          >
+            Let's Work Together
+            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

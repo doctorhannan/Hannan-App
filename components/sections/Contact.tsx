@@ -90,6 +90,7 @@ const Contact = () => {
                         <div className="space-y-4 mb-8">
                             {[
                                 { icon: "📧", label: "Email", value: "doctorhannan447@gmail.com" },
+                                { icon: "💬", label: "WhatsApp", value: "+92 3104737764" },
                                 { icon: "⏰", label: "Response Time", value: "Within 24 hours" },
                                 { icon: "🌍", label: "Availability", value: "Remote — Worldwide" },
                             ].map((item, idx) => (

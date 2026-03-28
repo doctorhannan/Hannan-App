@@ -8,7 +8,7 @@ const Footer = () => {
                 <span className="text-white text-xs font-bold font-heading">AI</span>
               </div>
               <span className="font-heading font-bold text-white text-lg">
-                DevAI<span className="gradient-text">Pro</span>
+                Hannan Asif <span className="gradient-text">Web + AI Specialist</span>
               </span>
             </div>
             <div className="flex flex-wrap justify-center gap-6">
@@ -18,7 +18,7 @@ const Footer = () => {
               <a href="#contact" className="text-gray-400 hover:text-indigo-300 text-sm transition">Contact</a>
             </div>
             <div className="text-gray-500 text-sm text-center">
-              © 2024 DevAIPro. Built with <span className="gradient-text font-semibold">AI & ❤️</span>
+              © 2025 DevAIPro. Built with <span className="gradient-text font-semibold">AI & ❤️</span>
             </div>
           </div>
         </div>
