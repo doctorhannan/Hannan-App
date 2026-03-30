@@ -12,7 +12,7 @@ const Overview = () => {
                   transition-transform duration-500 
                   hover:scale-105 hover:shadow-[0_0_40px_rgba(139,92,246,0.8)]">
     <img
-      src="/pictures/Hannanasif.png"
+      src="/pictures/Hannan.png"
       alt="Abdul Hannan Asif"
       className="w-full h-full object-cover"
     />
