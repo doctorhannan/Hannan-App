@@ -65,7 +65,7 @@ const Projects = () => {
       category: "Automation Projects",
       projects: [
         {
-          img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80",
+          img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80",
           title: "CRM Lead-to-Sales Automation",
           desc: "Fully automated lead pipeline from capture to conversion",
           tags: ["n8n", "Zapier", "HubSpot"],
@@ -106,40 +106,40 @@ const Projects = () => {
       category: "Business AI Solutions",
       projects: [
         {
-          img: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=500&q=80",
-          title: "AI Customer Support Agent",
-          desc: "24/7 intelligent chatbot handling customer queries",
-          tags: ["LangChain", "GPT-4", "RAG"],
-          result: "70% cost reduction",
-          problem: "Businesses faced high support costs and slow response times due to reliance on human agents, leading to poor customer satisfaction.",
-          solution: "Developed a 24/7 AI-powered customer support agent using LangChain and GPT-4 with RAG capabilities, enabling accurate, real-time responses while reducing dependency on human support teams.",
-          technologies: ["LangChain", "OpenAI", "Vector DB"],
-          cost: "$800",
-          review: "Game changer for our support team!"
-        },
-        {
-          img: "pictures/projects/quote send zap.png",
-          title: "Automated Quote Generation System",
-          desc: "End-to-end automation for quote/invoice and pricing generation",
-          tags: ["Zapier", "Python", "Automation"],
-          result: "Faster quotes/invoice with zero manual effort",
-          problem: "Manual quote creation was time-consuming, error-prone, and difficult to scale as it required matching products and calculating pricing manually.",
-          solution: "Built an automated system that captures customer data via webhooks, processes and normalizes inputs, intelligently matches products based on requirements, calculates pricing including installation and discounts, and generates structured quotes with one recommended and multiple alternate options for better customer decision-making.",
-          technologies: ["Zapier", "Python", "Google Sheets", "Webhooks"],
-          cost: "$200",
-          review: "Significantly improved efficiency and reduced manual workload."
-        },
-        {
-          img: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=500&q=80",
-          title: "AI Data Insights Agent",
-          desc: "AI agent for business analytics and reporting",
-          tags: ["AutoGen", "Python", "PostgreSQL"],
-          result: "10x faster reporting",
-          problem: "Businesses struggled to extract meaningful insights from raw data, requiring manual analysis and technical expertise.",
-          solution: "Developed an AI data agent that converts natural language queries into actionable insights, generates reports automatically, and visualizes business data—empowering faster decision-making.",
-          technologies: ["AutoGen", "Python", "PostgreSQL"],
+          img: "/pictures/projects/data analyst.jpeg", // Placeholder: Data analytics visualization
+          title: "AI-Powered Data Analyst Automation System",
+          desc: "Automated data extraction, visualization & reporting via natural language queries",
+          tags: ["n8n", "Google Gemini", "QuickChart"],
+          result: "Instant analysis & professional reports",
+          problem: "Businesses struggle with manual data analysis requiring technical expertise, slow decision-making, inconsistent reporting formats, and lack of real-time visualization.",
+          solution: "Built an n8n-powered AI system that interprets natural language queries, processes structured data from Google Sheets, generates dynamic charts (line/bar/pie), and delivers professional HTML reports via email—all through simple conversation.",
+          technologies: ["n8n", "Google Gemini", "Google Sheets", "QuickChart API", "Gmail API", "JavaScript"],
           cost: "$900",
-          review: "Saved us countless hours in reporting!"
+          review: "Transformed how we use data—reports that took hours now arrive in seconds!"
+        },
+        {
+          img: "/pictures/projects/khan bbq.jpeg", // Placeholder: Restaurant/ordering
+          title: "AI-Powered Food Ordering System",
+          desc: "Conversational AI ordering assistant for restaurants",
+          tags: ["n8n", "WhatsApp API", "Google Gemini"],
+          result: "Instant orders, zero manual effort",
+          problem: "Small restaurants rely on manual order taking via calls/messages, leading to miscommunication, no structured tracking, slow responses, and poor customer experience.",
+          solution: "Developed an AI-powered WhatsApp ordering assistant using n8n that handles the entire order flow—menu browsing, guided selection, real-time inventory checks, order confirmation, and automated logging—all through natural conversation.",
+          technologies: ["n8n", "WhatsApp Business API", "Google Gemini", "Google Sheets", "Webhooks"],
+          cost: "$500",
+          review: "Our customers love ordering on WhatsApp—game changer for our small kitchen!"
+        },
+        {
+          img: "/pictures/projects/HR MANAGMENT PROJECT.png", // Placeholder: HR/recruitment
+          title: "AI-Powered HR Management Automation System",
+          desc: "End-to-end recruitment & candidate screening automation",
+          tags: ["n8n", "AI Decision Logic", "Webhooks"],
+          result: "Faster hiring & instant communication",
+          problem: "HR departments waste time on manual candidate screening, interview coordination, and repetitive communication, leading to slow hiring and poor candidate experience.",
+          solution: "Built a fully automated HR workflow system using n8n that captures applicant data, applies AI-based evaluation logic, routes candidates into multiple decision paths (shortlist/reject/review), and triggers automated responses—creating a scalable, smart hiring pipeline.",
+          technologies: ["n8n", "Webhooks", "JavaScript", "JSON", "External APIs"],
+          cost: "$700",
+          review: "Cut our screening time by 80%—candidates love the instant responses!"
         },
       ]
     }
