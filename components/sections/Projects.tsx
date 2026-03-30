@@ -114,7 +114,7 @@ const Projects = () => {
           problem: "Businesses struggle with manual data analysis requiring technical expertise, slow decision-making, inconsistent reporting formats, and lack of real-time visualization.",
           solution: "Built an n8n-powered AI system that interprets natural language queries, processes structured data from Google Sheets, generates dynamic charts (line/bar/pie), and delivers professional HTML reports via email—all through simple conversation.",
           technologies: ["n8n", "Google Gemini", "Google Sheets", "QuickChart API", "Gmail API", "JavaScript"],
-          cost: "$900",
+          cost: "$300",
           review: "Transformed how we use data—reports that took hours now arrive in seconds!"
         },
         {
@@ -126,7 +126,7 @@ const Projects = () => {
           problem: "Small restaurants rely on manual order taking via calls/messages, leading to miscommunication, no structured tracking, slow responses, and poor customer experience.",
           solution: "Developed an AI-powered WhatsApp ordering assistant using n8n that handles the entire order flow—menu browsing, guided selection, real-time inventory checks, order confirmation, and automated logging—all through natural conversation.",
           technologies: ["n8n", "WhatsApp Business API", "Google Gemini", "Google Sheets", "Webhooks"],
-          cost: "$500",
+          cost: "$200",
           review: "Our customers love ordering on WhatsApp—game changer for our small kitchen!"
         },
         {

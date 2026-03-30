@@ -1,7 +1,7 @@
 const Achievements = () => {
   const stats = [
-    { value: "50+", label: "Projects Delivered" },
-    { value: "30+", label: "Happy Clients" },
+    { value: "10+", label: "Projects Delivered" },
+    { value: "10+", label: "Happy Clients" },
     { value: "10+", label: "Workflows Automated" },
     { value: "99%", label: "Client Satisfaction" },
   ];
