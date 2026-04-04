@@ -6,19 +6,19 @@ const Overview = () => {
 
                     {/* Left Side - Picture */}
                     <div className="relative flex justify-center">
-  <div className="relative rounded-full overflow-hidden w-64 h-64 lg:w-80 lg:h-80 
+                        <div className="relative rounded-full overflow-hidden w-64 h-64 lg:w-80 lg:h-80 
                   border border-indigo-500/20 
                   shadow-[0_0_20px_rgba(139,92,246,0.6)] 
                   transition-transform duration-500 
                   hover:scale-105 hover:shadow-[0_0_40px_rgba(139,92,246,0.8)]">
-    <img
-      src="/pictures/Hannan.png"
-      alt="Abdul Hannan Asif"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-transparent rounded-full"></div>
-  </div>
-</div>
+                            <img
+                                src="/pictures/Hannan.png"
+                                alt="Abdul Hannan Asif"
+                                className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-transparent rounded-full"></div>
+                        </div>
+                    </div>
 
                     {/* Right Side - Overview Text */}
                     <div>
@@ -30,16 +30,23 @@ const Overview = () => {
                             ABDUL <span className="text-indigo-400 font-semibold">HANNAN</span> ASIF
                         </h2>
 
-                        <p className="text-gray-400 leading-relaxed mb-4">
-                            I am a <span className="text-indigo-400 font-semibold">BS Computer Science graduate</span> with hands-on experience in the tech industry. Over the years, I’ve specialized in building intelligent automation solutions, helping businesses streamline workflows using <span className="text-indigo-400 font-semibold">Agentic AI</span> and smart automation agents.
+                        <p className="text-neutral-400 leading-relaxed mb-4">
+                            I am a <span className="text-indigo-400 font-semibold">BS Computer Science graduate</span> focused on solving real business problems through
+                            <span className="text-indigo-400 font-semibold"> AI automation, CRM automation, and intelligent workflow systems</span>.
+                            I help businesses move away from manual processes and build automated pipelines that capture leads, nurture customers,
+                            and convert them into revenue using <span className="text-indigo-400 font-semibold">Agentic AI and smart automation agents</span>.
                         </p>
 
-                        <p className="text-gray-400 leading-relaxed mb-4">
-                            I also have practical experience with <span className="text-indigo-400 font-semibold">Next.js web development</span>, designing responsive and modern web applications. My work combines AI expertise with full-stack web skills to deliver scalable, real-world solutions.
+                        <p className="text-neutral-400 leading-relaxed mb-4">
+                            Along with automation, I bring strong expertise in
+                            <span className="text-indigo-400 font-semibold"> Next.js web development</span>, building fast, responsive, and scalable applications.
+                            Whether it’s creating a custom dashboard, integrating APIs, or connecting automation systems with user-friendly interfaces,
+                            I ensure every solution is both technically powerful and easy to use.
                         </p>
 
-                        <p className="text-gray-400 leading-relaxed mb-8">
-                            Passionate about technology, I enjoy bridging the gap between cutting-edge AI research and practical applications that drive business results.
+                        <p className="text-neutral-400 leading-relaxed mb-8">
+                            My goal is simple: <span className="text-indigo-400 font-semibold">help businesses save time, reduce costs, and scale faster</span>
+                            by combining AI with practical implementation. I don’t just build systems — I build solutions that deliver measurable results.
                         </p>
 
                         <a

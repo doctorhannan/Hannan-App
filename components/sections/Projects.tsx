@@ -19,6 +19,47 @@ const Projects = () => {
 
   const projectCategories = [
     {
+      category: "Business AI Solutions",
+      projects: [
+        {
+          img: "/pictures/projects/data analyst.jpeg", // Placeholder: Data analytics visualization
+          title: "AI-Powered Data Analyst Automation System",
+          desc: "Automated data extraction, visualization & reporting via natural language queries",
+          tags: ["n8n", "Google Gemini", "QuickChart"],
+          result: "Instant analysis & professional reports",
+          problem: "Businesses struggle with manual data analysis requiring technical expertise, slow decision-making, inconsistent reporting formats, and lack of real-time visualization.",
+          solution: "Built an n8n-powered AI system that interprets natural language queries, processes structured data from Google Sheets, generates dynamic charts (line/bar/pie), and delivers professional HTML reports via email—all through simple conversation.",
+          technologies: ["n8n", "Google Gemini", "Google Sheets", "QuickChart API", "Gmail API", "JavaScript"],
+          cost: "$300",
+          review: "Transformed how we use data—reports that took hours now arrive in seconds!"
+        },
+        {
+          img: "/pictures/projects/khan bbq.jpeg", // Placeholder: Restaurant/ordering
+          title: "AI-Powered Food Ordering System",
+          desc: "Conversational AI ordering assistant for restaurants",
+          tags: ["n8n", "WhatsApp API", "Google Gemini"],
+          result: "Instant orders, zero manual effort",
+          problem: "Small restaurants rely on manual order taking via calls/messages, leading to miscommunication, no structured tracking, slow responses, and poor customer experience.",
+          solution: "Developed an AI-powered WhatsApp ordering assistant using n8n that handles the entire order flow—menu browsing, guided selection, real-time inventory checks, order confirmation, and automated logging—all through natural conversation.",
+          technologies: ["n8n", "WhatsApp Business API", "Google Gemini", "Google Sheets", "Webhooks"],
+          cost: "$200",
+          review: "Our customers love ordering on WhatsApp—game changer for our small kitchen!"
+        },
+        {
+          img: "/pictures/projects/HR MANAGMENT PROJECT.png", // Placeholder: HR/recruitment
+          title: "AI-Powered HR Management Automation System",
+          desc: "End-to-end recruitment & candidate screening automation",
+          tags: ["n8n", "AI Decision Logic", "Webhooks"],
+          result: "Faster hiring & instant communication",
+          problem: "HR departments waste time on manual candidate screening, interview coordination, and repetitive communication, leading to slow hiring and poor candidate experience.",
+          solution: "Built a fully automated HR workflow system using n8n that captures applicant data, applies AI-based evaluation logic, routes candidates into multiple decision paths (shortlist/reject/review), and triggers automated responses—creating a scalable, smart hiring pipeline.",
+          technologies: ["n8n", "Webhooks", "JavaScript", "JSON", "External APIs"],
+          cost: "$700",
+          review: "Cut our screening time by 80%—candidates love the instant responses!"
+        },
+      ]
+    },
+    {
       category: "Web Development",
       projects: [
         {
@@ -65,84 +106,46 @@ const Projects = () => {
       category: "Automation Projects",
       projects: [
         {
-          img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80",
-          title: "CRM Lead-to-Sales Automation",
-          desc: "Fully automated lead pipeline from capture to conversion",
-          tags: ["n8n", "Zapier", "HubSpot"],
-          result: "3x increase in lead conversion",
-          problem: "Businesses were manually managing leads across multiple platforms, leading to delayed follow-ups, missed opportunities, and inconsistent sales processes.",
-          solution: "Designed and deployed an end-to-end CRM automation system using n8n and Zapier that captures leads, qualifies them automatically, triggers personalized email sequences, and syncs data across CRM tools—ensuring faster response time and higher conversion rates.",
-          technologies: ["n8n", "Zapier", "HubSpot"],
+          img: "/pictures/projects/quote send zap.png", // update later
+          title: "Automated Quote Generation & Customer Notification System",
+          desc: "Instant quote generation with dynamic pricing and multi-channel delivery",
+          tags: ["Zapier", "Automation", "Webhooks", "JavaScript"],
+          result: "Quotes generated in seconds with zero manual effort",
+          problem: "Businesses faced delays, errors, and inconsistent pricing due to manual quote generation and slow customer response times.",
+          solution: "Built a fully automated system using Zapier that validates project data, calculates dynamic pricing (product + installation + discounts), and sends personalized quotes via email and SMS with smart time-based delivery.",
+          technologies: ["Zapier", "Webhooks", "JavaScript", "Google Sheets", "Outlook", "SMS API"],
+          cost: "$500",
+          review: "Quote process became instant, accurate, and fully automated!"
+        },
+      
+        {
+          img: "/pictures/projects/quote  ready with discount.png", // update later
+          title: "Automated Quote & Invoice Generation System",
+          desc: "Smart product matching with automated pricing and structured data flow",
+          tags: ["Zapier", "Python", "Automation", "API"],
+          result: "Significant reduction in manual work & improved accuracy",
+          problem: "Manual quote creation and product matching were slow, error-prone, and lacked scalability, leading to lost sales opportunities.",
+          solution: "Developed an intelligent automation system that processes customer data, matches best-fit products with alternatives, calculates pricing, stores structured data, and sends API-ready outputs for further processing.",
+          technologies: ["Zapier", "Python", "Webhooks", "Google Sheets", "JSON"],
           cost: "$400",
-          review: "Massively improved our sales workflow!"
+          review: "Smart recommendations and automation boosted our sales efficiency!"
         },
+      
         {
-          img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80",
-          title: "E-commerce Order Automation",
-          desc: "Automated order processing and customer notifications",
-          tags: ["Shopify", "Make", "API"],
-          result: "60% reduction in manual workload",
-          problem: "E-commerce businesses struggled with manual order processing, delayed updates, and inefficient customer communication, affecting customer satisfaction.",
-          solution: "Built an automated workflow that processes orders, updates inventory, sends real-time notifications, and integrates with third-party services—ensuring seamless operations and improved customer experience.",
-          technologies: ["Shopify API", "Make", "Webhooks"],
-          cost: "$350",
-          review: "Automation saved us hours daily!"
-        },
-        {
-          img: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&q=80",
-          title: "Marketing Automation System",
-          desc: "Automated email campaigns and lead nurturing",
-          tags: ["Mailchimp", "n8n", "Automation"],
-          result: "2.5x engagement rate",
-          problem: "Manual email marketing campaigns were time-consuming and lacked personalization, leading to low engagement and poor ROI.",
-          solution: "Implemented an automated marketing system that segments users, triggers personalized email sequences, and tracks engagement—boosting open rates and conversions significantly.",
-          technologies: ["Mailchimp", "n8n", "APIs"],
-          cost: "$300",
-          review: "Our marketing is now fully automated!"
+          img: "/pictures/projects/cyphter to jt (zap).png", // update later
+          title: "CRM & E-commerce Automation System",
+          desc: "End-to-end order processing, CRM sync, and customer notifications",
+          tags: ["Zapier", "CRM", "WooCommerce", "Automation"],
+          result: "Fully automated order lifecycle with real-time updates",
+          problem: "Businesses struggled with disconnected systems, manual order tracking, delayed communication, and syncing issues across CRM and e-commerce platforms.",
+          solution: "Built an automated workflow that processes orders via webhooks, applies intelligent routing, updates CRM systems, syncs invoices, and sends real-time customer notifications with tracking details.",
+          technologies: ["Zapier", "Webhooks", "WooCommerce", "Xero", "Outlook", "JavaScript"],
+          cost: "$450",
+          review: "Seamless automation across systems improved our operations significantly!"
         }
       ]
     },
-    {
-      category: "Business AI Solutions",
-      projects: [
-        {
-          img: "/pictures/projects/data analyst.jpeg", // Placeholder: Data analytics visualization
-          title: "AI-Powered Data Analyst Automation System",
-          desc: "Automated data extraction, visualization & reporting via natural language queries",
-          tags: ["n8n", "Google Gemini", "QuickChart"],
-          result: "Instant analysis & professional reports",
-          problem: "Businesses struggle with manual data analysis requiring technical expertise, slow decision-making, inconsistent reporting formats, and lack of real-time visualization.",
-          solution: "Built an n8n-powered AI system that interprets natural language queries, processes structured data from Google Sheets, generates dynamic charts (line/bar/pie), and delivers professional HTML reports via email—all through simple conversation.",
-          technologies: ["n8n", "Google Gemini", "Google Sheets", "QuickChart API", "Gmail API", "JavaScript"],
-          cost: "$300",
-          review: "Transformed how we use data—reports that took hours now arrive in seconds!"
-        },
-        {
-          img: "/pictures/projects/khan bbq.jpeg", // Placeholder: Restaurant/ordering
-          title: "AI-Powered Food Ordering System",
-          desc: "Conversational AI ordering assistant for restaurants",
-          tags: ["n8n", "WhatsApp API", "Google Gemini"],
-          result: "Instant orders, zero manual effort",
-          problem: "Small restaurants rely on manual order taking via calls/messages, leading to miscommunication, no structured tracking, slow responses, and poor customer experience.",
-          solution: "Developed an AI-powered WhatsApp ordering assistant using n8n that handles the entire order flow—menu browsing, guided selection, real-time inventory checks, order confirmation, and automated logging—all through natural conversation.",
-          technologies: ["n8n", "WhatsApp Business API", "Google Gemini", "Google Sheets", "Webhooks"],
-          cost: "$200",
-          review: "Our customers love ordering on WhatsApp—game changer for our small kitchen!"
-        },
-        {
-          img: "/pictures/projects/HR MANAGMENT PROJECT.png", // Placeholder: HR/recruitment
-          title: "AI-Powered HR Management Automation System",
-          desc: "End-to-end recruitment & candidate screening automation",
-          tags: ["n8n", "AI Decision Logic", "Webhooks"],
-          result: "Faster hiring & instant communication",
-          problem: "HR departments waste time on manual candidate screening, interview coordination, and repetitive communication, leading to slow hiring and poor candidate experience.",
-          solution: "Built a fully automated HR workflow system using n8n that captures applicant data, applies AI-based evaluation logic, routes candidates into multiple decision paths (shortlist/reject/review), and triggers automated responses—creating a scalable, smart hiring pipeline.",
-          technologies: ["n8n", "Webhooks", "JavaScript", "JSON", "External APIs"],
-          cost: "$700",
-          review: "Cut our screening time by 80%—candidates love the instant responses!"
-        },
-      ]
-    }
+    
   ];
 
   return (
@@ -163,7 +166,7 @@ const Projects = () => {
 
         {projectCategories.map((section, i) => (
           <div key={i} className="mb-16">
-            <h3 className="text-2xl font-bold text-purple-500 mb-6">
+            <h3 className="text-3xl font-bold font-heading gradient-text text-indigo-400 mb-6">
               {section.category}
             </h3>
 
