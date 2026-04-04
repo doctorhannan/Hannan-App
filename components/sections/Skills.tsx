@@ -1,11 +1,13 @@
 const Skills = () => {
     const skillsLeft = [
       { name: "AI Agents Development", percent: 95 },
+      { name: "nextjs web development", percent: 96 },
       { name: "RAG Systems", percent: 92 },
       { name: "LangChain / LLM Integration", percent: 90 },
-      { name: "n8n & Zapier Automation", percent: 88 },
+      { name: "Crticial Problem Solution", percent: 97 },
     ];
     const skillsRight = [
+      { name: "n8n & Zapier Automation", percent: 93 },
       { name: "API Integrations", percent: 93 },
       { name: "CRM & Business Automation", percent: 87 },
       { name: "Python / FastAPI", percent: 85 },

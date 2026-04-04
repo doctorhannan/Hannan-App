@@ -145,6 +145,30 @@ const Projects = () => {
         }
       ]
     },
+    {
+      category: "AI Assistant",
+      projects: [
+        {
+          img: "/pictures/projects/chatbot ss.png", // update later
+          title: "RevTalk — AI-Powered Support Assistant",
+          desc: "AI support assistant that automates customer queries using RAG-based architecture",
+          
+          tags: ["AI", "RAG", "LLM", "Automation", "Customer Support"],
+          
+          result: "65% reduction in manual support workload with instant 24/7 responses",
+          
+          problem: "The company faced a surge in customer inquiries related to charger compatibility, pricing, installation, and technical support. Manual handling caused delayed responses, repetitive workload, inefficient document searching, and rising operational costs.",
+          
+          solution: "Designed and implemented a production-ready RAG-based AI assistant that retrieves verified business data using semantic search and generates accurate responses via LLMs. The system supports multi-turn conversations, understands technical queries, and includes human escalation for complex cases.",
+          
+          technologies: ["Python", "RAG Architecture", "OpenAI API", "Gemini", "Vector Database", "Next.js"],
+          
+          cost: "$300", // optional - adjust if needed
+          
+          review: "Customer support became faster, smarter, and significantly more efficient with AI automation."
+        }
+      ]
+    },
     
   ];
 
@@ -197,11 +221,11 @@ const Projects = () => {
                       ))}
                     </div>
 
-                    <h3 className="text-white font-bold mb-1">
+                    <h3 className="text-indigo-500 font-bold mb-1">
                       {project.title}
                     </h3>
 
-                    <p className="text-gray-400 text-xs mb-3">
+                    <p className="text-gray-300 text-xs mb-3">
                       {project.desc}
                     </p>
 
@@ -216,7 +240,7 @@ const Projects = () => {
         ))}
 
         {selectedProject && (
-          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4 ">
+          <div className="fixed inset-0 bg-gray-950/90 flex items-center justify-center z-50 px-4 ">
             <div className="bg-navy-900 max-w-5xl w-full rounded-2xl p-6 relative border border-purple-900">
 
               <button
@@ -231,7 +255,7 @@ const Projects = () => {
                 className="w-full h-56 object-cover rounded-xl mb-4 "
               />
 
-              <h2 className="text-2xl text-white font-bold mb-3">
+              <h2 className="text-2xl text-red-500 font-bold mb-3">
                 {selectedProject.title}
               </h2>
 
@@ -249,20 +273,20 @@ const Projects = () => {
                 </p>
               )}
 
-              <p className="text-gray-400 mb-2">
-                <span className="text-neutral-200 font-semibold">Problem:</span> {selectedProject.problem}
+              <p className="text-neutral-300 font-body mb-2">
+                <span className="text-indigo-500 font-heading font-bold">Problem:</span> {selectedProject.problem}
               </p>
 
-              <p className="text-gray-400 mb-2">
-                <span className="text-neutral-200 font-semibold">Solution:</span> {selectedProject.solution}
+              <p className="text-gray-300 mb-2">
+                <span className="text-indigo-500 font-heading font-bold">Solution:</span> {selectedProject.solution}
               </p>
 
-              <p className="text-gray-400 mb-2">
-                <span className="text-neutral-200 font-semibold">Technologies:</span> {selectedProject.technologies.join(", ")}
+              <p className="text-gray-300 mb-2">
+                <span className="text-indigo-500 font-heading font-bold">Technologies:</span> {selectedProject.technologies.join(", ")}
               </p>
 
-              <p className="text-gray-400 mb-2">
-                <span className="text-neutral-200 font-semibold">Cost:</span> {selectedProject.cost}
+              <p className="text-gray-300 mb-2">
+                <span className="text-indigo-500 font-heading font-bold">Cost:</span> {selectedProject.cost}
               </p>
 
               <p className="text-green-400 mt-3">

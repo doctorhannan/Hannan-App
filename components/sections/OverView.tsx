@@ -30,21 +30,21 @@ const Overview = () => {
                             ABDUL <span className="text-indigo-400 font-semibold">HANNAN</span> ASIF
                         </h2>
 
-                        <p className="text-neutral-400 leading-relaxed mb-4">
+                        <p className="text-neutral-300 leading-relaxed mb-4">
                             I am a <span className="text-indigo-400 font-semibold">BS Computer Science graduate</span> focused on solving real business problems through
                             <span className="text-indigo-400 font-semibold"> AI automation, CRM automation, and intelligent workflow systems</span>.
                             I help businesses move away from manual processes and build automated pipelines that capture leads, nurture customers,
                             and convert them into revenue using <span className="text-indigo-400 font-semibold">Agentic AI and smart automation agents</span>.
                         </p>
 
-                        <p className="text-neutral-400 leading-relaxed mb-4">
+                        <p className="text-neutral-300 leading-relaxed mb-4">
                             Along with automation, I bring strong expertise in
                             <span className="text-indigo-400 font-semibold"> Next.js web development</span>, building fast, responsive, and scalable applications.
                             Whether it’s creating a custom dashboard, integrating APIs, or connecting automation systems with user-friendly interfaces,
                             I ensure every solution is both technically powerful and easy to use.
                         </p>
 
-                        <p className="text-neutral-400 leading-relaxed mb-8">
+                        <p className="text-neutral-300 leading-relaxed mb-8">
                             My goal is simple: <span className="text-indigo-400 font-semibold">help businesses save time, reduce costs, and scale faster</span>
                             by combining AI with practical implementation. I don’t just build systems — I build solutions that deliver measurable results.
                         </p>
