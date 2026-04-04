@@ -21,7 +21,7 @@ const CTA = () => {
             }
             className="cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-bold px-10 py-4 rounded-md font-heading text-lg flex items-center gap-2 hover:shadow-[0_0_30px_rgba(99,102,241,0.6)] hover:-translate-y-0.5 transition-all"
           >
-            📅 Book a Free Call
+            Book a Free Call
           </button>
           <a
             href="#projects"
