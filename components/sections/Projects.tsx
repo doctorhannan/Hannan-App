@@ -19,6 +19,49 @@ const Projects = () => {
 
   const projectCategories = [
     {
+      category: "Automation Projects",
+      projects: [
+        {
+          img: "/pictures/projects/quote send zap.png", // update later
+          title: "Automated Quote Generation & Customer Notification System",
+          desc: "Instant quote generation with dynamic pricing and multi-channel delivery",
+          tags: ["Zapier", "Automation", "Webhooks", "JavaScript"],
+          result: "Quotes generated in seconds with zero manual effort",
+          problem: "Businesses faced delays, errors, and inconsistent pricing due to manual quote generation and slow customer response times.",
+          solution: "Built a fully automated system using Zapier that validates project data, calculates dynamic pricing (product + installation + discounts), and sends personalized quotes via email and SMS with smart time-based delivery.",
+          technologies: ["Zapier", "Webhooks", "JavaScript", "Google Sheets", "Outlook", "SMS API"],
+          cost: "$500",
+          review: "Quote process became instant, accurate, and fully automated!"
+        },
+      
+        {
+          img: "/pictures/projects/quote  ready with discount.png", // update later
+          title: "Automated Quote & Invoice Generation System",
+          desc: "Smart product matching with automated pricing and structured data flow",
+          tags: ["Zapier", "Python", "Automation", "API"],
+          result: "Significant reduction in manual work & improved accuracy",
+          problem: "Manual quote creation and product matching were slow, error-prone, and lacked scalability, leading to lost sales opportunities.",
+          solution: "Developed an intelligent automation system that processes customer data, matches best-fit products with alternatives, calculates pricing, stores structured data, and sends API-ready outputs for further processing.",
+          technologies: ["Zapier", "Python", "Webhooks", "Google Sheets", "JSON"],
+          cost: "$400",
+          review: "Smart recommendations and automation boosted our sales efficiency!"
+        },
+      
+        {
+          img: "/pictures/projects/cyphter to jt (zap).png", // update later
+          title: "CRM & E-commerce Automation System",
+          desc: "End-to-end order processing, CRM sync, and customer notifications",
+          tags: ["Zapier", "CRM", "WooCommerce", "Automation"],
+          result: "Fully automated order lifecycle with real-time updates",
+          problem: "Businesses struggled with disconnected systems, manual order tracking, delayed communication, and syncing issues across CRM and e-commerce platforms.",
+          solution: "Built an automated workflow that processes orders via webhooks, applies intelligent routing, updates CRM systems, syncs invoices, and sends real-time customer notifications with tracking details.",
+          technologies: ["Zapier", "Webhooks", "WooCommerce", "Xero", "Outlook", "JavaScript"],
+          cost: "$450",
+          review: "Seamless automation across systems improved our operations significantly!"
+        }
+      ]
+    },
+    {
       category: "Business AI Solutions",
       projects: [
         {
@@ -99,49 +142,6 @@ const Projects = () => {
           technologies: ["Next.js", "SEO"],
           cost: "$250",
           review: ""
-        }
-      ]
-    },
-    {
-      category: "Automation Projects",
-      projects: [
-        {
-          img: "/pictures/projects/quote send zap.png", // update later
-          title: "Automated Quote Generation & Customer Notification System",
-          desc: "Instant quote generation with dynamic pricing and multi-channel delivery",
-          tags: ["Zapier", "Automation", "Webhooks", "JavaScript"],
-          result: "Quotes generated in seconds with zero manual effort",
-          problem: "Businesses faced delays, errors, and inconsistent pricing due to manual quote generation and slow customer response times.",
-          solution: "Built a fully automated system using Zapier that validates project data, calculates dynamic pricing (product + installation + discounts), and sends personalized quotes via email and SMS with smart time-based delivery.",
-          technologies: ["Zapier", "Webhooks", "JavaScript", "Google Sheets", "Outlook", "SMS API"],
-          cost: "$500",
-          review: "Quote process became instant, accurate, and fully automated!"
-        },
-      
-        {
-          img: "/pictures/projects/quote  ready with discount.png", // update later
-          title: "Automated Quote & Invoice Generation System",
-          desc: "Smart product matching with automated pricing and structured data flow",
-          tags: ["Zapier", "Python", "Automation", "API"],
-          result: "Significant reduction in manual work & improved accuracy",
-          problem: "Manual quote creation and product matching were slow, error-prone, and lacked scalability, leading to lost sales opportunities.",
-          solution: "Developed an intelligent automation system that processes customer data, matches best-fit products with alternatives, calculates pricing, stores structured data, and sends API-ready outputs for further processing.",
-          technologies: ["Zapier", "Python", "Webhooks", "Google Sheets", "JSON"],
-          cost: "$400",
-          review: "Smart recommendations and automation boosted our sales efficiency!"
-        },
-      
-        {
-          img: "/pictures/projects/cyphter to jt (zap).png", // update later
-          title: "CRM & E-commerce Automation System",
-          desc: "End-to-end order processing, CRM sync, and customer notifications",
-          tags: ["Zapier", "CRM", "WooCommerce", "Automation"],
-          result: "Fully automated order lifecycle with real-time updates",
-          problem: "Businesses struggled with disconnected systems, manual order tracking, delayed communication, and syncing issues across CRM and e-commerce platforms.",
-          solution: "Built an automated workflow that processes orders via webhooks, applies intelligent routing, updates CRM systems, syncs invoices, and sends real-time customer notifications with tracking details.",
-          technologies: ["Zapier", "Webhooks", "WooCommerce", "Xero", "Outlook", "JavaScript"],
-          cost: "$450",
-          review: "Seamless automation across systems improved our operations significantly!"
         }
       ]
     },

@@ -13,6 +13,7 @@ import CTA from "@/components/sections/CTA";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
 import Overview from "@/components/sections/OverView";
+import CaseStudies from "@/components/sections/CaseStudies";
 
 export default function Home() {
   useEffect(() => {
@@ -51,6 +52,7 @@ export default function Home() {
         <Skills />
         <Services />
         <Projects />
+        <CaseStudies/>
         <Achievements />
         <Testimonials />
         <CTA />
