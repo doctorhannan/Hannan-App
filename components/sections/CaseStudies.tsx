@@ -26,7 +26,7 @@ const CaseStudies = () => {
   const router = useRouter();
 
   return (
-    <section className="py-16 md:py-20 bg-navy-950">
+    <section id="case-studies" className="py-16 md:py-20 bg-navy-950">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Heading */}

@@ -1,6 +1,6 @@
 const Overview = () => {
     return (
-        <section id="overview" className="py-20 bg-gradient-to-b from-black via-purple-950 to-black">
+        <section id="overview" className="py-20 bg-black">
             <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-11 xl:px-16 ">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -26,27 +26,51 @@ const Overview = () => {
                             <span className="text-indigo-400 text-sm font-medium">Overview</span>
                         </div>
 
-                        <h2 className="font-heading text-4xl font-bold text-white mb-6">
-                            ABDUL <span className="text-indigo-400 font-semibold">HANNAN</span> ASIF
+                        <h2 className="font-heading text-4xl font-bold text-white mb-1">
+                            ABDUL <span className="text-blue-500 font-semibold">HANNAN</span> ASIF
                         </h2>
+                        <h4 className="font-heading text-md font-bold text-blue-500 mb-6">
+                            AI/ML Engineer | EV & Renewable Energy Research
+                        </h4>
 
                         <p className="text-neutral-300 leading-relaxed mb-4">
-                            I am a <span className="text-indigo-400 font-semibold">BS Computer Science graduate</span> focused on solving real business problems through
-                            <span className="text-indigo-400 font-semibold"> AI automation, CRM automation, and intelligent workflow systems</span>.
-                            I help businesses move away from manual processes and build automated pipelines that capture leads, nurture customers,
-                            and convert them into revenue using <span className="text-indigo-400 font-semibold">Agentic AI and smart automation agents</span>.
+                            I am a{" "}
+                            <span className="text-indigo-400 font-semibold">
+                                BS Computer Science graduate
+                            </span>{" "}
+                            with a strong foundation in software development, Artificial Intelligence,
+                            Machine Learning, and intelligent systems. I enjoy using technology to
+                            understand complex problems and build practical solutions that can create
+                            meaningful real-world impact.
                         </p>
 
                         <p className="text-neutral-300 leading-relaxed mb-4">
-                            Along with automation, I bring strong expertise in
-                            <span className="text-indigo-400 font-semibold"> Next.js web development</span>, building fast, responsive, and scalable applications.
-                            Whether it’s creating a custom dashboard, integrating APIs, or connecting automation systems with user-friendly interfaces,
-                            I ensure every solution is both technically powerful and easy to use.
+                            My professional experience with an{" "}
+                            <span className="text-indigo-400 font-semibold">
+                                Australian EV charging and renewable energy company
+                            </span>{" "}
+                            introduced me to the challenges and opportunities within the{" "}
+                            <span className="text-indigo-400 font-semibold">
+                                electric vehicle and sustainable energy
+                            </span>{" "}
+                            sector. This experience sparked a deeper interest in exploring how
+                            technology can help make EV charging smarter, more efficient, and better
+                            integrated with renewable energy.
                         </p>
 
                         <p className="text-neutral-300 leading-relaxed mb-8">
-                            My goal is simple: <span className="text-indigo-400 font-semibold">help businesses save time, reduce costs, and scale faster</span>
-                            by combining AI with practical implementation. I don’t just build systems — I build solutions that deliver measurable results.
+                            I want to bring together my{" "}
+                            <span className="text-indigo-400 font-semibold">
+                                technical knowledge in AI and Machine Learning
+                            </span>{" "}
+                            with my interest in renewable energy to develop new intelligent solutions
+                            for the EV and energy sector. My current focus is on{" "}
+                            <span className="text-indigo-400 font-semibold">
+                                Reinforcement Learning for intelligent energy management
+                            </span>
+                            , exploring how AI can optimize the interaction between renewable
+                            generation, EV charging, Battery Energy Storage Systems (BESS), and the
+                            electrical grid.
                         </p>
 
                         <a

@@ -47,16 +47,16 @@ export default function Home() {
 
       <main className="flex-1">
         <Overview/>
+        <Achievements /> 
         <Hero />
+        {/* <Testimonials /> */}
         <About />
         <Skills />
-        <Services />
+        {/* <Services /> */}
         <Projects />
         <CaseStudies/>
-        <Achievements />
-        <Testimonials />
-        <CTA />
-        <Contact />
+        {/* <CTA /> */}
+        {/* <Contact /> */}
       </main>
 
       <Footer />
