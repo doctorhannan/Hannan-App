@@ -113,13 +113,13 @@ const Navbar = () => {
             </a>
           ))}
 
-          <a
+          {/* <a
             href="#contact"
             className="bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-5 py-2.5 rounded-md text-center mt-2"
             onClick={(e) => scrollTo(e, "contact")}
           >
             Hire Me
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>
