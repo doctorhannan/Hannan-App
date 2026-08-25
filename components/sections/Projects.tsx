@@ -19,12 +19,36 @@ const Projects = () => {
 
   const projectCategories = [
     {
+      category: "AI Assistant",
+      projects: [
+        {
+          img: "/pictures/projects/chatbot ss.png", // update later
+          title: "RevTalk — AI-Powered EVSE Support Assistant",
+          desc: "AI support assistant that automates customer queries using RAG-based architecture",
+          
+          tags: ["AI", "RAG", "LLM", "Automation", "Customer Support"],
+          
+          result: "65% reduction in manual support workload with instant 24/7 responses",
+          
+          problem: "The company faced a surge in customer inquiries related to charger compatibility, pricing, electrical supply, Which EVSE is best, installation, and technical support. Manual handling caused delayed responses, repetitive workload, inefficient document searching, and rising operational costs.",
+          
+          solution: "Designed and implemented a production-ready RAG-based AI assistant that retrieves verified business data using semantic search and generates accurate responses via LLMs. The system supports multi-turn conversations, understands technical queries, and includes human escalation for complex cases.",
+          
+          technologies: ["Python", "RAG Architecture", "OpenAI API", "Gemini", "Vector Database", "Next.js"],
+          
+          cost: "$300", // optional - adjust if needed
+          
+          review: "Customer support became faster, smarter, and significantly more efficient with AI automation."
+        }
+      ]
+    },
+    {
       category: "Automation Projects",
       projects: [
         {
-          img: "/pictures/projects/quote send zap.png", // update later
+          img: "/pictures/projects/aq payload.png", // update later
           title: "Automated Quote Generation & Customer Notification System",
-          desc: "Instant quote generation with dynamic pricing and multi-channel delivery",
+          desc: "For EVSE Customers Instant quote generation with dynamic pricing and multi-channel delivery",
           tags: ["Zapier", "Automation", "Webhooks", "JavaScript"],
           result: "Quotes generated in seconds with zero manual effort",
           problem: "Businesses faced delays, errors, and inconsistent pricing due to manual quote generation and slow customer response times.",
@@ -145,30 +169,7 @@ const Projects = () => {
         }
       ]
     },
-    {
-      category: "AI Assistant",
-      projects: [
-        {
-          img: "/pictures/projects/chatbot ss.png", // update later
-          title: "RevTalk — AI-Powered Support Assistant",
-          desc: "AI support assistant that automates customer queries using RAG-based architecture",
-          
-          tags: ["AI", "RAG", "LLM", "Automation", "Customer Support"],
-          
-          result: "65% reduction in manual support workload with instant 24/7 responses",
-          
-          problem: "The company faced a surge in customer inquiries related to charger compatibility, pricing, installation, and technical support. Manual handling caused delayed responses, repetitive workload, inefficient document searching, and rising operational costs.",
-          
-          solution: "Designed and implemented a production-ready RAG-based AI assistant that retrieves verified business data using semantic search and generates accurate responses via LLMs. The system supports multi-turn conversations, understands technical queries, and includes human escalation for complex cases.",
-          
-          technologies: ["Python", "RAG Architecture", "OpenAI API", "Gemini", "Vector Database", "Next.js"],
-          
-          cost: "$300", // optional - adjust if needed
-          
-          review: "Customer support became faster, smarter, and significantly more efficient with AI automation."
-        }
-      ]
-    },
+    
     
   ];
 
